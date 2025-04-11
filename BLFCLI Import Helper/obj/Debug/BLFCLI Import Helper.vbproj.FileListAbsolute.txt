@@ -1,0 +1,24 @@
+C:\Users\Shane\source\repos\BLFCLI Speeder Upper\BLFCLI Speeder Upper\obj\Debug\BLFCLI Speeder Upper.vbprojAssemblyReference.cache
+C:\Users\Shane\source\repos\BLFCLI Speeder Upper\BLFCLI Speeder Upper\obj\Debug\BLFCLI Speeder Upper.vbproj.GenerateResource.cache
+C:\Users\Shane\source\repos\BLFCLI Speeder Upper\BLFCLI Speeder Upper\obj\Debug\BLFCLI Speeder Upper.vbproj.CoreCompileInputs.cache
+C:\Users\Shane\source\repos\BLFCLI Speeder Upper\BLFCLI Speeder Upper\bin\Debug\BLFCLI Import Helper.exe.config
+C:\Users\Shane\source\repos\BLFCLI Speeder Upper\BLFCLI Speeder Upper\bin\Debug\BLFCLI Import Helper.exe
+C:\Users\Shane\source\repos\BLFCLI Speeder Upper\BLFCLI Speeder Upper\bin\Debug\BLFCLI Import Helper.pdb
+C:\Users\Shane\source\repos\BLFCLI Speeder Upper\BLFCLI Speeder Upper\bin\Debug\BLFCLI Import Helper.xml
+C:\Users\Shane\source\repos\BLFCLI Speeder Upper\BLFCLI Speeder Upper\obj\Debug\BLFCLI Import Helper.exe
+C:\Users\Shane\source\repos\BLFCLI Speeder Upper\BLFCLI Speeder Upper\obj\Debug\BLFCLI Import Helper.xml
+C:\Users\Shane\source\repos\BLFCLI Speeder Upper\BLFCLI Speeder Upper\obj\Debug\BLFCLI Import Helper.pdb
+C:\Users\Shane\source\repos\BLFCLI Speeder Upper\BLFCLI Speeder Upper\obj\Debug\BLFCLI_Import_Helper.Form1.resources
+C:\Users\Shane\source\repos\BLFCLI Speeder Upper\BLFCLI Speeder Upper\obj\Debug\BLFCLI_Import_Helper.Resources.resources
+C:\Users\Shane\source\repos\BLFCLI Speeder Upper\BLFCLI Import Helper\bin\Debug\BLFCLI Import Helper.exe.config
+C:\Users\Shane\source\repos\BLFCLI Speeder Upper\BLFCLI Import Helper\bin\Debug\BLFCLI Import Helper.exe
+C:\Users\Shane\source\repos\BLFCLI Speeder Upper\BLFCLI Import Helper\bin\Debug\BLFCLI Import Helper.pdb
+C:\Users\Shane\source\repos\BLFCLI Speeder Upper\BLFCLI Import Helper\bin\Debug\BLFCLI Import Helper.xml
+C:\Users\Shane\source\repos\BLFCLI Speeder Upper\BLFCLI Import Helper\obj\Debug\BLFCLI Import Helper.vbprojAssemblyReference.cache
+C:\Users\Shane\source\repos\BLFCLI Speeder Upper\BLFCLI Import Helper\obj\Debug\BLFCLI_Import_Helper.Form1.resources
+C:\Users\Shane\source\repos\BLFCLI Speeder Upper\BLFCLI Import Helper\obj\Debug\BLFCLI_Import_Helper.Resources.resources
+C:\Users\Shane\source\repos\BLFCLI Speeder Upper\BLFCLI Import Helper\obj\Debug\BLFCLI Import Helper.vbproj.GenerateResource.cache
+C:\Users\Shane\source\repos\BLFCLI Speeder Upper\BLFCLI Import Helper\obj\Debug\BLFCLI Import Helper.vbproj.CoreCompileInputs.cache
+C:\Users\Shane\source\repos\BLFCLI Speeder Upper\BLFCLI Import Helper\obj\Debug\BLFCLI Import Helper.exe
+C:\Users\Shane\source\repos\BLFCLI Speeder Upper\BLFCLI Import Helper\obj\Debug\BLFCLI Import Helper.xml
+C:\Users\Shane\source\repos\BLFCLI Speeder Upper\BLFCLI Import Helper\obj\Debug\BLFCLI Import Helper.pdb
