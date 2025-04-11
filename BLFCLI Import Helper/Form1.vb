@@ -53,10 +53,6 @@
         End If
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs)
-        MsgBox(My.Settings.subDR)
-    End Sub
-
     Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
         If CheckBox1.Checked = True Then
             Button2.Enabled = True
