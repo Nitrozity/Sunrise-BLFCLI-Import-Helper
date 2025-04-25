@@ -65,6 +65,66 @@ Namespace My
                 Me("subDR") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("placeholder")>  _
+        Public Property gvFileName() As String
+            Get
+                Return CType(Me("gvFileName"),String)
+            End Get
+            Set
+                Me("gvFileName") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("1")>  _
+        Public Property entryWeight() As String
+            Get
+                Return CType(Me("entryWeight"),String)
+            End Get
+            Set
+                Me("entryWeight") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("1")>  _
+        Public Property minPlayerCount() As String
+            Get
+                Return CType(Me("minPlayerCount"),String)
+            End Get
+            Set
+                Me("minPlayerCount") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("false")>  _
+        Public Property tf_skipAfterVeto() As String
+            Get
+                Return CType(Me("tf_skipAfterVeto"),String)
+            End Get
+            Set
+                Me("tf_skipAfterVeto") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("false")>  _
+        Public Property tf_optional() As String
+            Get
+                Return CType(Me("tf_optional"),String)
+            End Get
+            Set
+                Me("tf_optional") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

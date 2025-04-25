@@ -5,5 +5,20 @@
     <Setting Name="subDR" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
+    <Setting Name="gvFileName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">placeholder</Value>
+    </Setting>
+    <Setting Name="entryWeight" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="minPlayerCount" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="tf_skipAfterVeto" Type="System.String" Scope="User">
+      <Value Profile="(Default)">false</Value>
+    </Setting>
+    <Setting Name="tf_optional" Type="System.String" Scope="User">
+      <Value Profile="(Default)">false</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
