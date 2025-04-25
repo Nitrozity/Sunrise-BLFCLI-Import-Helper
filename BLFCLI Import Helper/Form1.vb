@@ -91,7 +91,7 @@ Public Class Form1
         hex.Replace("019a", "Standoff")
         hex.Replace("0258", "Cold Storage")
         hex.Replace("01ea", "Assembly")
-        hex.Replace("01B8", "Longshore")
+        hex.Replace("01b8", "Longshore")
         hex.Replace("02e4", "Citadel")
         hex.Replace("024e", "Ghost Town")
         hex.Replace("0208", "Blackout")
