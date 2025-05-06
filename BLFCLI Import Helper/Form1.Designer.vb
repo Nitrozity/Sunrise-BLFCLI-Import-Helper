@@ -60,6 +60,7 @@ Partial Class Form1
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.CSV_Textbox = New System.Windows.Forms.RichTextBox()
         Me.BuildDir = New System.Windows.Forms.Label()
@@ -441,7 +442,7 @@ Partial Class Form1
         Me.DataGridView1.AllowUserToResizeRows = False
         Me.DataGridView1.BackgroundColor = System.Drawing.SystemColors.Window
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3})
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column4, Me.Column3})
         Me.DataGridView1.Location = New System.Drawing.Point(8, 6)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
@@ -464,12 +465,18 @@ Partial Class Form1
         Me.Column2.ReadOnly = True
         Me.Column2.Width = 95
         '
+        'Column4
+        '
+        Me.Column4.HeaderText = "Author"
+        Me.Column4.Name = "Column4"
+        Me.Column4.ReadOnly = True
+        '
         'Column3
         '
         Me.Column3.HeaderText = "Path"
         Me.Column3.Name = "Column3"
         Me.Column3.ReadOnly = True
-        Me.Column3.Width = 403
+        Me.Column3.Width = 283
         '
         'CSV_Textbox
         '
@@ -498,7 +505,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(675, 387)
+        Me.ClientSize = New System.Drawing.Size(676, 388)
         Me.Controls.Add(Me.BuildDir)
         Me.Controls.Add(Me.CSV_Textbox)
         Me.Controls.Add(Me.TabControl1)
@@ -547,9 +554,6 @@ Partial Class Form1
     Friend WithEvents GroupBox3 As GroupBox
     Friend WithEvents copyBuild As Button
     Friend WithEvents copyBuildConfig As Button
-    Friend WithEvents Column1 As DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As DataGridViewTextBoxColumn
     Friend WithEvents CSV_Textbox As RichTextBox
     Friend WithEvents BuildDir As Label
     Friend WithEvents Label2 As Label
@@ -568,4 +572,8 @@ Partial Class Form1
     Friend WithEvents Label8 As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents rememberSettings As CheckBox
+    Friend WithEvents Column1 As DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As DataGridViewTextBoxColumn
+    Friend WithEvents Column4 As DataGridViewTextBoxColumn
+    Friend WithEvents Column3 As DataGridViewTextBoxColumn
 End Class

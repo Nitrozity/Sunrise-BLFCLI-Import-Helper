@@ -1,5 +1,12 @@
 ﻿Imports System.IO
+Imports System.Text
+Imports System.ComponentModel
+Imports System.Collections.ObjectModel
+Imports System.Management.Automation
+Imports System.Management.Automation.Runspaces
+
 Public Class Form1
+
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         cmbx_skipafterveto.SelectedIndex = cmbx_skipafterveto.FindStringExact(My.Settings.tf_skipAfterVeto)
         cmbx_optional.SelectedIndex = cmbx_optional.FindStringExact(My.Settings.tf_optional)
@@ -8,7 +15,6 @@ Public Class Form1
         minPlayerCount.Value = My.Settings.minPlayerCount
         cmbx_skipafterveto.Text = My.Settings.tf_skipAfterVeto
         cmbx_optional.Text = My.Settings.tf_optional
-
     End Sub
 
     Private Sub Form1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
@@ -23,12 +29,18 @@ Public Class Form1
         End If
     End Sub
     Private Sub LoadUsermaps_Click(sender As Object, e As EventArgs) Handles LoadUsermaps.Click
+
+        Dim dlgResult As DialogResult
+
+        If dlgResult = Windows.Forms.DialogResult.Cancel Then Exit Sub
+
         ListBox1.Items.Clear()
         DataGridView1.Rows.Clear()
         CSV_Textbox.Clear()
         CSV_Textbox.Text = "map_variant_file_name,game_variant_file_name,weight,minimum_player_count,skip_after_veto,optional" + Environment.NewLine
 
         If Me.FolderBrowserDialog1.ShowDialog() = Windows.Forms.DialogResult.OK Then
+
 
             Dim fileInfo As New IO.DirectoryInfo(FolderBrowserDialog1.SelectedPath)
             Dim usermaps As IO.FileInfo() = fileInfo.GetFiles("*", IO.SearchOption.AllDirectories)
@@ -124,8 +136,13 @@ Public Class Form1
 
     End Sub
 
+    Private Function BytesToString(bytes() As Byte) As String
+        Return String.Concat(Array.ConvertAll(bytes, Function(b) If(b <> 0, CStr(Chr(b)), "")))
+    End Function
+
     Private Sub importMapsDGV()
         Dim loadMem(63) As Byte
+        Dim loadAuth(15) As Byte
         Dim byteArray(1) As Byte
 
         For Each fileInPath In Directory.GetFiles(FolderBrowserDialog1.SelectedPath).Where(Function(fn) fn.ToLower.Contains(“usermap”))
@@ -134,7 +151,6 @@ Public Class Form1
             fileOpen.Seek(&H411, IO.SeekOrigin.Begin)
             fileOpen.Read(loadMem, 0, 63)
             fileOpen.Close()
-
             Dim offset As Integer = 53538
             Do
 
@@ -143,18 +159,22 @@ Public Class Form1
                     fs.Read(byteArray, 0, byteArray.Length)
                 End Using
 
-                If ByteArrayToHexString(byteArray) = "0000" Then
+                If ByteArrayToHexString(byteArray) = "0000" AndAlso offset = 53538 Then
                     offset = 57634
                 Else
                     Exit Do
                 End If
-
             Loop
-            Me.DataGridView1.Rows.Add(String.Concat(Array.ConvertAll(loadMem, Function(b) If(b <> 0, CStr(Chr(b)), ""))).Replace("(Map Variant)", ""), ByteArrayToHexString(byteArray), fileInPath)
 
-            If chk_CreateCSV.Checked = True Then
-                System.IO.File.WriteAllText("game_set.csv", String.Concat(Array.ConvertAll(loadMem, Function(b) If(b <> 0, CStr(Chr(b)), ""))))
-            End If
+            Dim offset2 As Integer = 53744
+            Do
+                Using fs2 As New FileStream(fileInPath, FileMode.Open, FileAccess.Read)
+                    fs2.Seek(offset2, SeekOrigin.Begin)
+                    fs2.Read(loadAuth, 0, loadAuth.Length)
+                End Using
+                Exit Do
+            Loop
+            Me.DataGridView1.Rows.Add(BytesToString(loadMem).Replace("(Map Variant)", ""), ByteArrayToHexString(byteArray), BytesToString(loadAuth), fileInPath)
         Next
     End Sub
 

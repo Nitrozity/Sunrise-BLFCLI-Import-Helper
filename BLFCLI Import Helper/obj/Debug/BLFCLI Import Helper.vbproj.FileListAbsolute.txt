@@ -22,3 +22,5 @@ C:\Users\Shane\source\repos\BLFCLI Speeder Upper\BLFCLI Import Helper\obj\Debug\
 C:\Users\Shane\source\repos\BLFCLI Speeder Upper\BLFCLI Import Helper\obj\Debug\BLFCLI Import Helper.exe
 C:\Users\Shane\source\repos\BLFCLI Speeder Upper\BLFCLI Import Helper\obj\Debug\BLFCLI Import Helper.xml
 C:\Users\Shane\source\repos\BLFCLI Speeder Upper\BLFCLI Import Helper\obj\Debug\BLFCLI Import Helper.pdb
+C:\Users\Shane\source\repos\BLFCLI Speeder Upper\BLFCLI Import Helper\bin\Debug\System.Management.Automation.dll
+C:\Users\Shane\source\repos\BLFCLI Speeder Upper\BLFCLI Import Helper\obj\Debug\BLFCLI Import Helper.vbproj.CopyComplete
